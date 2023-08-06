@@ -1,0 +1,111 @@
+
+@media only screen and (max-width: 1200px){
+  
+    header .navigation{
+    position: absolute;
+    top: 70px;
+    /* left: -100%; */
+    background-color: black;
+    width: 100%;
+    transition: left 0.3s ease-out;
+    }
+
+
+
+    header .navigation .navbar{
+        flex-direction: column;
+    }
+    #hero .hero-heading{
+    padding: 6.5rem 1.5rem;
+    }
+
+    #hero .hero-heading h1 {
+
+        font-size: 3rem;
+    }
+
+    #pricing .plan-container .plan-card{
+        width: 300px;
+    }
+
+    #pricing .plan-container .plan-card .enroll-btn{
+        padding: 8px 35px;
+    }
+
+    #review .review-item .review-head {
+        padding: 10px 20px;
+    }
+
+    #review .review-item p {
+        padding: 10px 12px;
+    }
+
+
+    #contact .contact-container .left .contact-item {
+        padding: 16px 10px;
+    }
+
+    #contact .contact-container .left .contact-item .contact-info {
+        padding: 0 20px;
+    }
+
+    .nav-right{
+        right: -100%;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 800px) 
+{
+
+    .btn{
+       padding: 8px 50px;
+    }
+
+    #programs .program-container .program-card .card-image{
+        width: 250px;
+    }
+
+    #pricing .plan-container{
+      flex-direction: column;
+    }
+
+    #pricing .plan-container .plan-card{
+        margin: 8px auto;
+    }
+
+    #review .review-container{
+        flex-direction: column;
+    }
+
+    #review .review-container .review-item{
+        margin: 8px auto;
+        width: 335px;
+        height: 250px;
+    }
+
+    #contact .contact-container{
+        flex-direction: column;
+    }
+
+    #contact .contact-container .left{
+        width: 100%;
+    }
+
+    #contact .contact-container .right{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    #contact .contact-container .right .form{
+        width: 70%;
+    }
+
+    #footer .footer-container .footer-items{
+        width: 100%;
+    }
+}

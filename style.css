@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    background-color: rgb(31, 31, 31);
+}
+
+span {
+    color: purple;
+}
+
+.btn {
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: 2px solid purple;
+    font-size: 20px;
+    padding: 8px 70px;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.3s ease-out;
+}
+
+.cta{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: purple;
+}
+
+.container {
+    width: 100%;
+    padding: 40px 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    margin: 0 2%;
+}
+
+header .logo h1 {
+    color: white;
+}
+
+
+
+header .navigation .navbar {
+    display: flex;
+    align-items: center;
+}
+
+header .navigation .navbar li {
+    list-style: none;
+    padding: 25px 36px;
+}
+
+header .navigation .navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 25px 0;
+}
+
+header .navigation .navbar li a:hover {
+    color: rgb(189, 188, 188);
+}
+
+#hero {
+    height: 89vh;
+}
+
+#hero .hero-container {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    /* position: relative; */
+}
+
+.bg-image {
+    background: rgba(0, 0, 0, 0.6) url('img/man-bg.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.bg-image2 {
+    background: rgba(0, 0, 0, 0.8) url('img/bg-2.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#hero .hero-heading {
+    width: 100%;
+    padding: 50px;
+
+}
+
+#hero .hero-heading h1 {
+    color: white;
+    font-size: 4.5rem;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+#programs .program-container {
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#programs .program-container .program-card {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 36px 34px;
+    background-color: black;
+    margin: 20px;
+}
+
+#programs .program-container .program-card h3 {
+    margin-top: 5%;
+    padding-left: 10px;
+}
+
+#programs .program-container .program-card .card-image {
+    width: 300px;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+}
+
+#pricing .plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1920px;
+    margin: auto;
+}
+
+#pricing .plan-container .plan-card {
+    border: 2px solid white;
+    background-color: black;
+    width: 370px;
+    border-radius: 8px;
+}
+
+#pricing .plan-container .plan-card h3 {
+    margin: 6% 0;
+}
+
+#pricing .plan-container .plan-card ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#pricing .plan-container .plan-card ul li {
+    list-style: none;
+    padding: 10px 0;
+    font-size: 1.4rem;
+}
+
+#pricing .plan-container .plan-card ul li::before {
+    content: "- ";
+}
+
+#pricing .plan-container .plan-card .enroll-btn {
+    display: block;
+    margin: 8% auto;
+}
+
+#review .review-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#review .review-container .review-item {
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 8px;
+    width: 370px;
+    height: 280px;
+    margin: 0 24px;
+}
+
+#review .review-item .review-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+#review .review-item .review-head h5,
+#review .review-item .review-head h6 {
+    font-weight: 100;
+    padding: 2px 0;
+    font-size: 1.02rem;
+}
+
+#review .review-item .review-head i {
+    color: purple;
+}
+
+#review .review-item p {
+    padding: 20px 20px;
+}
+
+#contact .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+    margin: auto;
+}
+
+#contact .contact-container .left {
+    width: 40%;
+    /* border: 2px solid red; */
+}
+
+
+#contact .contact-container .left .contact-item {
+    /* border: 2px solid purple; */
+    background-color: black;
+    width: 70%;
+    margin: 4% auto;
+    display: flex;
+    align-items: center;
+    padding: 26px 34px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px purple;
+}
+
+#contact .contact-container .left .contact-item .contact-info {
+    padding: 0 40px;
+}
+
+#contact .contact-container .left .contact-item i {
+    background-color: purple;
+    border: 2px solid purple;
+    border-radius: 150px;
+    padding: 20px;
+    font-size: 35px;
+}
+
+#contact .contact-container .left .contact-item .contact-info h5,
+#contact .contact-container .left .contact-item .contact-info h6 {
+    padding: 2px 0;
+    font-size: 16px;
+}
+
+#contact .contact-container .right {
+    width: 60%;
+    /* border: 2px solid yellow; */
+}
+
+#contact .contact-container .right .form {
+    width: 50%;
+    margin: auto;
+}
+
+#contact .contact-container .right .form .form-input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 0;
+}
+
+#contact .contact-container .right .form .submit-btn {
+    display: block;
+    margin: 16px auto;
+}
+
+
+#footer {
+    background-color: black;
+}
+
+#footer .footer-container {
+    max-width: 1920px;
+    margin: auto;
+}
+
+#footer .footer-container .footer-items {
+    width: 50%;
+    margin: auto;
+    /* border: 2px solid red; */
+    padding: 20px 0;
+}
+
+#footer .footer-container .footer-items h1,
+#footer .footer-container .footer-items h2 {
+    padding: 2px 0;
+}
+
+#footer .footer-container .footer-items p {
+    padding: 4px 0;
+}
+
+#footer .footer-container .footer-items .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    /* border: 2px solid yellow; */
+    width: 50%;
+    padding: 10px 0;
+}
+
+#footer .footer-container .footer-items .social-icons .social-item {
+    filter: invert(1);
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Utility Classes */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light{
+    font-weight: 100;
+}
+
+.text-small {
+    font-size: 16px;
+}
+
+.text-medium {
+    font-size: 36px;
+}
+
+.text-large {
+    font-size: 50px;
+}
+
+.textShadow{
+    text-shadow: 2px 2px black;
+}
+
+.section-title {
+    font-size: 52px;
+    text-align: center;
+}
+
+/* Hamburger Menu */
+
+.burger{
+    border: 2px solid white;
+    border-radius: 150px;
+    position: absolute;
+    top: 13px;
+    right: 4%;
+    display: none;
+    z-index: 10;
+}
+
+.burger .line{
+    background-color: white;
+    height: 2px;
+    width: 24px;
+    margin: 10px 12px;
+}
+
+.burger:hover{
+    cursor: pointer;
+}
+
+/* Animations */
+
+
+#hero .hero-heading h1{
+    transform: translateX(-70%);
+    animation-name: text-reveal;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+#hero .hero-heading h1:nth-child(2){
+    animation-delay: 0.5s ;
+}
+#hero .hero-heading h1:nth-child(3){
+    transform: translateX(-140%);
+    animation-delay: 1.5s ;
+    animation-timing-function: ease-out;
+    }
+
+@keyframes text-reveal {
+    100%{
+        transform: translateX(0%);
+     }
+    
+}
